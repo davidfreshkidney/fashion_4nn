@@ -1,0 +1,86 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 10 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: nn_extracredit.py
+--------------------------------------------------------------------------------
+nn_extracredit.py:69:63: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:70:64: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:71:65: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:72:66: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:73:68: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:77:57: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:78:57: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:79:58: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:80:58: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+nn_extracredit.py:81:57: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'nn_extracredit.py'
+ outputting to 'nn_extracreit-upgraded.py'
+--------------------------------------------------------------------------------
+
+54:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+55:4: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+60:8: INFO: Added keywords to args of function 'tf.nn.conv2d'
+60:8: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+65:11: INFO: Added keywords to args of function 'tf.nn.max_pool'
+65:11: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+65:11: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+69:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+69:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+69:63: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+70:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+70:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+70:64: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+71:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+71:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+71:65: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+72:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+72:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+72:66: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+73:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+73:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+73:68: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+77:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+77:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+77:57: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+78:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+78:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+78:57: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+79:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+79:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+79:58: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+80:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+80:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+80:58: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+81:11: INFO: tf.get_variable: Default use_resource to False. This will use (deprecated) reference variables. Removing this argument will work in most cases.
+
+81:11: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+81:57: ERROR: Using member tf.contrib.layers.xavier_initializer in deprecated module tf.contrib. tf.contrib.layers.xavier_initializer cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository, or fork the required code.
+116:7: INFO: Added keywords to args of function 'tf.reduce_mean'
+116:22: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+118:12: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+121:30: INFO: Added keywords to args of function 'tf.argmax'
+121:50: INFO: Added keywords to args of function 'tf.argmax'
+124:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+128:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+131:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+137:21: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+--------------------------------------------------------------------------------
+
